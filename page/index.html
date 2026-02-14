@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matthias Roggo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+<main>
+
+    <header>
+        <h1>Ausgewählte Arbeiten / Matthias Roggo</h1>
+    </header>
+
+    <section>
+        <h2>A Window</h2>
+        <h3>
+            2024<br/>
+            Lichtobjekt<br/>
+            Karton gelasert, Seidenpapier, LEDs
+        </h3>
+        <div class="scroller">
+            <video controls autoplay loop muted>
+                <source src="assets/awindow.mp4" type="video/mp4">
+            </video>
+            <img src="assets/awindow2.jpeg">
+            <img src="assets/awindow1.jpeg">
+            <img src="assets/awindow6.jpeg">
+            <img src="assets/awindow4.jpeg">
+        </div>
+
+        <p>
+            Was unterscheidet ein Fenster von einem Bildschirm?
+        </p>
+        <ul>
+            <li>Videostream via WebSocket</li>
+            <li>80 Frames pro Sekunde, Latenz unter 20ms</li>
+            <li>React-Webapp auf Laptop als Medienquelle</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Köbi</h2>
+        <h3>
+            2019<br/>
+            asdf
+        </h3>
+
+        <div class="scroller">
+            <video controls autoplay loop muted>
+                <source src="assets/koebi.mp4" type="video/mp4">
+            </video>
+            <img src="assets/koebi6.jpeg">
+            <img src="assets/koebi2.jpeg">
+            <img src="assets/koebi4.jpeg">
+            <img src="assets/koebi5.jpeg">
+
+        </div>
+
+        <p>
+            Tooling für eine 2-Kanal-Videoinstallation von <em>Stiller</em>&nbsp;(Verena&nbsp;Looser&nbsp;/&nbsp;Melina&nbsp;Weissenborn). <br/>
+            <a href="https://vimeo.com/340186454">"Landscape of Abscence"</a> (Kennwort: <em>Absence</em>) wurde 2017 – 2019 auf verschiedenen Kurz-
+            und Experimentalfilmfestivals gezeigt.
+        </p>
+
+        <ul>
+            <li>Datenbank mit 50.000 Dialogfragmenten aus 30 Filmen</li>
+            <li>Gender-Estimation der Sprecher*innen durch KI</li>
+            <li>Electron-App zum Durchsuchen, Anhören und Re-arrangieren der Dialoge</li>
+            <li>Export als Davinci-Projektdatei</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Remonteur</h2>
+        <h3>
+            2017<br/>
+            Datenaufbereitung + Electron-App
+        </h3>
+
+        <div class="scroller">
+            <video controls autoplay loop muted>
+                <source src="assets/remonteur.mov" type="video/mp4">
+            </video>
+            <img src="assets/remonteur3.png">
+            <img src="assets/remonteur4.png">
+
+        </div>
+
+        <p>
+            Tooling für eine 2-Kanal-Videoinstallation von <em>Stiller</em>&nbsp;(Verena&nbsp;Looser&nbsp;/&nbsp;Melina&nbsp;Weissenborn). <br/>
+            <a href="https://vimeo.com/340186454">"Landscape of Abscence"</a> (Kennwort: <em>Absence</em>) wurde 2017 – 2019 auf verschiedenen Kurz-
+            und Experimentalfilmfestivals gezeigt.
+        </p>
+
+        <ul>
+            <li>Datenbank mit 50.000 Dialogfragmenten aus 30 Filmen</li>
+            <li>Gender-Estimation der Sprecher*innen durch KI</li>
+            <li>Electron-App zum Durchsuchen, Anhören und Re-arrangieren der Dialoge</li>
+            <li>Export als Davinci-Projektdatei</li>
+        </ul>
+    </section>
+
+</main>
+
+<script>
+    document.querySelectorAll('.scroller img').forEach(img => {
+        img.addEventListener('click', function () {
+            this.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'start'});
+        });
+    });
+</script>
+</body>
+</html>
