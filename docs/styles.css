@@ -75,7 +75,7 @@ main {
     scroll-snap-type: x mandatory;
     width: 100vw;
 
-    --pad: max(0px, calc((100vw - var(--wrapper-width) + 50px) / 2));
+    --pad: max(0px, calc((100vw - var(--wrapper-width)) / 2));
 
     margin-left: calc(-1 * var(--pad));
     box-sizing: border-box;
@@ -91,6 +91,36 @@ main {
         scroll-snap-align: start;
         scroll-snap-stop: always;
     }
+
+/* Discreet horizontal scrollbar (cross-browser) */
+    scrollbar-width: thin;                     /* Firefox */
+    scrollbar-color: transparent transparent;   /* Firefox */
+}
+
+.scroller:hover {
+    scrollbar-color: rgba(235, 235, 239, 0.22) transparent; /* Firefox */
+}
+
+/* WebKit browsers (Chrome/Safari/Edge) */
+.scroller::-webkit-scrollbar {
+    height: 6px;   /* horizontal scrollbar thickness */
+}
+
+.scroller::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+    background-color: transparent; /* hidden by default */
+    border-radius: 999px;
+}
+
+.scroller:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(235, 235, 239, 0.22); /* subtle on hover */
+}
+
+.scroller::-webkit-scrollbar-thumb:active {
+    background-color: rgba(235, 235, 239, 0.32);
 }
 
 .card {
