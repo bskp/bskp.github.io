@@ -25,6 +25,10 @@ h1 {
     font-size: 1.6rem;
     letter-spacing: -0.02em;
     font-weight: 200;
+
+    span {
+        color: #505051;
+    }
 }
 
 h2 {
