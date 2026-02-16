@@ -176,4 +176,14 @@ footer {
     span, span a {
         color: #505051;
     }
+
+    a {
+        text-decoration: none;
+        line-height: 1em;
+        display: inline-block;
+    }
+
+    a:hover {
+        border-bottom: 2px solid white;
+    }
 }
