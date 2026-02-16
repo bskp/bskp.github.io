@@ -87,9 +87,14 @@ main {
     img, video {
         cursor: pointer;
         border-radius: 50px;
-        height: 60vh;
+        height: clamp(12rem, 60vh, 60vw);
         scroll-snap-align: start;
         scroll-snap-stop: always;
+
+        .media-controls-container {
+            /* for safari */
+            border-radius: 50px;
+        }
     }
 
 /* Discreet horizontal scrollbar (cross-browser) */
